@@ -1,0 +1,155 @@
+@import url('normalize.css');
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: #84cdca;
+    color: #c3fae8 ;
+}
+
+
+h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+ /* #c3fae8 */
+
+.input_do{
+    font-size: 20px;
+    color:#fff;
+    width: 50vh;
+    height: 5vh;
+    border: 3px solid #40b3a2;
+    background: #84cdca ;
+
+    padding: 0 10px 0 10px;
+    outline: none; /* Убираем внешний контур */
+    box-shadow: none; /* Убираем тень */
+}
+
+.input_do::placeholder{
+    color: #fff;
+    font-size: 2vh;
+}
+
+/* #e27d5f
+#84cdca
+#e8a87c
+#c38d9d
+#40b3a2 */
+
+.add_task{
+    margin: 2vh 0 0vh 0;
+    font-size: 2vh;
+    font-weight: 500;
+    color: #fff;
+    width: 52.5vh;
+    height: 5vh;
+    border: 3px solid #40b3a2;
+    background: #84cdca ;
+    
+    transition-duration: 0.2s;
+}
+
+.add_task:hover{
+    transform: scale(1.1);
+    background: #e8a87c;
+}
+
+/* .task{
+    border: 3px solid #40b3a2;
+    display: flex;
+    font-size: 2vh;
+    width: 48vh;
+    height: auto;
+    list-style-type: none;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+} */
+
+.task{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-box{
+    border: 3px solid #40b3a2;
+    display: flex;
+    margin: 2vh 0 0 0;
+    padding-left: 2vh;
+    font-size: 2vh;
+    width: 50vh;
+    height: 6vh;
+    list-style-type: none;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.buttons_task_suc{
+    border: 3px solid #40b3a2;
+    display: flex;
+    color:#fff;
+    text-decoration:line-through;
+    font-weight: 700;
+    margin: 2vh 0 0 0;
+    padding-left: 2vh;
+    font-size: 2vh;
+    width: 50vh;
+    height: 6vh;
+    list-style-type: none;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task > span{
+    font-weight: 500;
+    color: #fff;
+}
+
+.buttons_task{
+    padding-right: 2vh;
+}
+
+
+
+.buttons_task > button{
+    border-radius: 20px;
+    background: #84cdca;
+    outline: none; /* Убираем внешний контур */
+    box-shadow: none; /* Убираем тень */
+    border-color: transparent; /* Убираем цвет границы */
+}
+
+.chek_button{
+    transition-duration: 0.2s;
+    margin-right: 1.5vh;
+}
+
+.chek_button:hover{
+    transform: scale(1.7);
+}
+
